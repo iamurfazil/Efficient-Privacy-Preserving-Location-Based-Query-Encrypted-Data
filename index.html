@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPLQ - Secure Location-Based Queries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #00ffff;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00cccc;
+}
+
+/* Header Styles */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #00ffff;
+}
+
+header nav a {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #00cccc;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cceeff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero .buttons a {
+  display: inline-block;
+  background: #00ffff;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.hero .buttons a:hover {
+  transform: scale(1.05);
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+section p {
+  font-size: 1.2rem;
+  color: #cceeff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Features Section */
+.features .feature-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.features .feature-item {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.features .feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00ffff;
+}
+
+/* How It Works Section */
+.how-it-works ol {
+  list-style: decimal;
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.how-it-works ol li {
+  margin-bottom: 10px;
+  color: #cceeff;
+}
+
+/* Contact Section */
+.contact a {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  color: #00cccc;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">EPLQ</div>
+    <nav>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="upload.html">Upload Data</a>
+      <a href="search.html">Search</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Efficient Privacy-Preserving Location Queries</h1>
+    <p>Secure your location-based queries with encrypted data processing using our Firebase-powered platform. Protect privacy while exploring nearby Points of Interest.</p>
+    <div class="buttons">
+      <a href="register.html">Get Started</a>
+      <a href="login.html">Login</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>At EPLQ, we are committed to providing secure and efficient location-based query solutions. Our platform leverages cutting-edge encryption and Firebase technology to ensure your data remains private and protected.</p>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Privacy First</h3>
+        <p>We prioritize your privacy with advanced encryption techniques.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Fast Queries</h3>
+        <p>Experience lightning-fast location-based searches.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Easy Integration</h3>
+        <p>Seamlessly integrate our platform into your applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <p>Learn how our platform processes your location-based queries securely and efficiently.</p>
+    <ol>
+      <li>Register and upload your encrypted data.</li>
+      <li>Perform location-based queries using our secure interface.</li>
+      <li>Receive results while maintaining your privacy.</li>
+    </ol>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need support? Reach out to us at <a href="mailto:support@eplq.com" style="color: #00ffff;">support@eplq.com</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 EPLQ | Built with Firebase | Privacy by Design
+  </footer>
+  <!-- Add Firebase SDKs FIRST -->
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_AUTH_DOMAIN",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_STORAGE_BUCKET",
+      messagingSenderId: "YOUR_MSG_ID",
+      appId: "YOUR_APP_ID"
+    };
+
+    // Initialize Firebase (modular style for v10+)
+    const app = firebase.initializeApp(firebaseConfig);
+    // const db = firebase.firestore();
+    // const auth = firebase.auth();
+
+    // Animate on scroll (optional if using scroll animations)
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.hero').forEach(section => {
+        observer.observe(section);
+      });
+
+      // Basic button feedback animation
+      document.querySelectorAll('.buttons a').forEach(button => {
+        button.addEventListener('click', () => {
+          button.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            button.style.transform = 'scale(1)';
+          }, 150);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

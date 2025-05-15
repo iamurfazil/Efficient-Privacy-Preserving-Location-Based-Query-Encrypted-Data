@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Data - EPLQ</title>
+  <style>
+    body {
+  background: #0d1b2a;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #1b263b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #00ffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #33415c;
+  color: white;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 12px;
+  background-color: #00ffff;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0ff;
+}
+
+#results {
+  margin-top: 20px;
+  background: #415a77;
+  padding: 15px;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+#results p {
+  margin: 0;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Search for POIs</h2>
+    <form id="searchForm">
+      <input type="text" id="query" placeholder="Enter location or radius" required />
+      <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
+  </div>
+  <script type="module" src="assets/search.js"></script>
+</body>
+</html>
